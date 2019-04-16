@@ -10,8 +10,12 @@ export class DevelopersController {
     ];
 
     @Get()
-    getDevelopers() {
-        return { data: this.database };
+    async getDevelopers() {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve({ data: this.database });
+            }, 3000);
+        });
     }
 
 }
