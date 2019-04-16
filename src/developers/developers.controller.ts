@@ -4,8 +4,9 @@ import { Controller, Get } from '@nestjs/common';
 export class DevelopersController {
 
     database: Developer[] = [
-        { id: '1', firstName: 'Ben', lastName: 'Hedrick', team: 'boss' },
+        { id: '1', firstName: 'Ben', lastName: 'Hedrick', team: 'Boss' },
         { id: '2', firstName: 'Jesse', lastName: 'Taylor', team: 'Quoting' },
+        { id: '3', firstName: 'Zac', lastName: 'Adams', team: 'ERO' }
     ];
 
     @Get()
